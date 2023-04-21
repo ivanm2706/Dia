@@ -14,10 +14,12 @@ let count = 0;
 let width;
 
 window.addEventListener('hashchange', () => {
-  if (window.location.hash !== '#menu') {
+  if (window.location.hash === '#menu') {
+    page.classList.add('page__body--with-menu');
+  } else {
+    page.classList.remove('page__body--with-menu');
     icon.classList.remove('icon--close');
     menu.classList.remove('header__menu--open');
-    page.classList.toggle('page__body--with-menu');
   }
 });
 
