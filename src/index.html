@@ -391,12 +391,17 @@
             <div class="contact__form">
               <h2 class="contact__title">Send us a message</h2>
   
-              <form action="post"  class="form js-form">
+              <form
+                action="post"
+                class="form js-form"
+                autocomplete="on"
+              >
                 <input 
                   type="email" 
                   placeholder="Your email"
                   class="form__input"
                   required
+                  name="useremail"
                 >
 
                 <input 
@@ -404,6 +409,7 @@
                   placeholder="Your name"
                   class="form__input"
                   required
+                  name="username"
                 >
 
                 <textarea 
